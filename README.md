@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# React Utility Tracker App [https://utility-tracker.netlify.app/]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React Logo](./public/favicon.ico)
 
-## Available Scripts
+Welcome to the React Tracker App! This web application combines various tools and trackers to help you manage your daily tasks, finances, and stay updated with the latest weather information. Additionally, it includes user authentication using Firebase for secure access.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tools and Technologies](#tools-and-technologies)
+4. [Usage](#usage)
+5. [Screenshots](#screenshots)
+6. [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The React Tracker App is a multi-purpose application designed to simplify various aspects of your life. It offers the following key features:
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User Authentication
 
-### `npm run build`
+- Secure login and signup functionality using Firebase Authentication.
+- Protects your data and ensures a personalized experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Calculator
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Basic calculator for performing arithmetic operations.
+- Helps you with quick calculations without leaving the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Currency Converter
 
-### `npm run eject`
+- Converts between different currencies using real-time exchange rates.
+- Stay updated with the latest currency conversions for your international transactions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Unit Converter
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Converts various units such as length, weight, volume, and more.
+- Simplify unit conversions for everyday tasks.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Weather Tracker
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Provides real-time weather information based on your location.
+- Stay informed about current weather conditions, temperature, and forecasts.
 
-## Learn More
+### Expense Tracker
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Helps you keep track of your daily expenses and budget.
+- Categorize your expenses and view detailed reports.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Career Tracker
 
-### Code Splitting
+- Organize your career goals, job applications, and interviews.
+- Stay on top of your professional development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Task Creator
 
-### Analyzing the Bundle Size
+- Create, manage, and prioritize tasks and to-do lists.
+- Stay organized and ensure you complete your daily tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tools and Technologies
 
-### Making a Progressive Web App
+The React Tracker App is built using the following tools and technologies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React
+- Firebase Authentication
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **User Authentication**: Sign up for an account or log in to an existing one to access the app's features.
 
-### Deployment
+2. **Calculator**: Use the calculator for quick arithmetic calculations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Currency Converter**: Convert currencies based on real-time exchange rates.
 
-### `npm run build` fails to minify
+4. **Unit Converter**: Convert various units as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Weather Tracker**: Get current weather information by allowing location access.
+
+6. **Expense Tracker**: Record and categorize your expenses to manage your finances.
+
+7. **Career Tracker**: Organize your job applications and career goals.
+
+8. **Task Creator**: Create and manage your to-do lists and tasks.
+
+## Screenshots
+
+![Screenshot 1](./src/sources/production/utitility-web-ss1-production.png)
+
+![Screenshot 2](./src/sources/production/utility-web-ss2-production.png)
+
+![Screenshot 3](./src/sources/production/utility-mob-ss1-production.png)
+
+## License
+
+This project is only for Learning purpose.
