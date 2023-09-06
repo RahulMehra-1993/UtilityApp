@@ -71,11 +71,13 @@
   height: 0;
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 38%;
+  transform: translate(-50%, -50%);
   border: none;
   background-color: transparent;
   color-scheme: dark;
   color: var(--primary-color2);
+  opacity: 0;
 }
 
 .submittButton {

@@ -5,7 +5,6 @@ import { GlobalContext } from "../../store/GlobalStore";
 
 const StudentPortal = (props) => {
   const context = useContext(GlobalContext);
-
   let sortedArray = useRef([]);
   let [showFormState, ChangeShowFormState] = useState(false);
   let [firsMount, ChangeFirsMount] = useState(false);
@@ -48,7 +47,16 @@ const StudentPortal = (props) => {
     sortByDateFunc("education");
     {
       sortedArray.current.length === 0
-        ? ChangeContentState(<div className={classes.content}></div>)
+        ? ChangeContentState(
+            <div className={classes.content}>
+              <ul>
+                <li onClick={showForm}>Add +</li>
+                <li className={classes.noData} key="0">
+                  No data Available
+                </li>
+              </ul>
+            </div>
+          )
         : ChangeContentState(
             <div className={classes.content}>
               <ul>
@@ -195,7 +203,7 @@ const StudentPortal = (props) => {
             onClick={educationContentFunc}
             className={educationCondition ? classes.active : undefined}
           >
-            <p>Education </p>
+            <p>Education</p>
             <span className={classes.icon}>
               <i class="ri-graduation-cap-line"></i>
             </span>

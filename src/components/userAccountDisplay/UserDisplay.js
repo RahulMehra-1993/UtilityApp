@@ -29,8 +29,8 @@ const UserDisplay = () => {
     reader.onload = function () {
       image = reader.result;
     };
-    if (sizeOfTheImage > 1.5) {
-      window.alert("Image must be less than 1.5m.b");
+    if (sizeOfTheImage > 2) {
+      window.alert("Size must be less than 2 M.B");
       imageObject = null;
       changeImageName("");
       return;
@@ -178,7 +178,7 @@ const UserDisplay = () => {
   }
 
   function logoutHandler() {
-       //trigger logout func from global store
+    //trigger logout func from global store
     context.logoutHandler();
     context.contentType("login");
   }
