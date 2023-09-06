@@ -1,0 +1,132 @@
+.unitsConverterBox {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.unitsConverterBox::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(https://cdn.leonardo.ai/users/5ed85200-afed-45b0-a0ea-4256dc0de054/generations/e86f69dd-ec99-4724-a68b-af5ea9f20e9d/variations/Default_centered_isometric_mural_graffiti_composition_shapes_p_1_e86f69dd-ec99-4724-a68b-af5ea9f20e9d_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.2;
+  border-radius: 1rem;
+}
+
+.typeOfUnits > select,
+.insideConverterBox > select {
+  width: 100%;
+  height: 4rem;
+  font-size: var(--small);
+  border-radius: 1rem;
+  background-color: var(--primary-color2);
+  color: var(--secondry-color);
+  padding: 0 2rem;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.displayConverterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--primary-color2);
+}
+.displayConverterBox > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--medium);
+  gap: 1rem;
+  /* width: 40rem; */
+  height: 4rem;
+  text-align: center;
+  background-color: var(--primary-color3);
+  border-radius: 1rem;
+}
+
+.displayConverterBox > *:nth-child(3n - 1) {
+  font-size: var(--medium);
+  background: none;
+  color: var(--secondry-color);
+  margin-left: 0rem;
+  height: 3rem;
+}
+.displayConverterBox > .icon {
+  font-size: var(--large);
+  color: var(--secondry-color);
+  padding: 1rem 0.5rem;
+  background-color: var(--theme-color9);
+}
+.displayConverterBox > .icon {
+  transform: rotate(90deg);
+}
+.displayConverterBox > input {
+  border: none;
+  outline: none;
+  color: var(--secondry-color);
+  border-width: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.displayConverterBox > input:focus {
+  border: 1px solid var(--secondry-color);
+}
+
+/* number scollbar default setting removal */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .unitsConverterBox {
+    width: 60rem;
+    overflow: hidden;
+  }
+  .displayConverterBox {
+    flex-direction: row;
+  }
+  .displayConverterBox > .icon > * {
+    transform: rotate(90deg) !important;
+  }
+  .displayConverterBox > .icon {
+    margin: 1rem;
+  }
+
+  .displayConverterBox > *:nth-child(3n - 1) {
+    padding: 0 2px;
+    text-align: center;
+  }
+
+  .displayConverterBox > input {
+    width: 100%;
+  }
+  .displayConverterBox > *:not(:nth-child(3n - 1)) {
+    width: 20rem;
+  }
+
+  .typeOfUnits > select,
+  .insideConverterBox > select {
+    width: 100%;
+  }
+}

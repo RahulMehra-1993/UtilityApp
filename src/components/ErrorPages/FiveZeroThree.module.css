@@ -1,0 +1,35 @@
+.errorContainer {
+  width: 40rem;
+  color: var(--primary-color);
+  background-color: var(--secondry-color);
+  text-align: center;
+  font-size: var(--large);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: var(--border-radius);
+}
+
+.errorCode {
+  letter-spacing: var(--medium-space);
+}
+.errorImage {
+  background-image: url(../../sources/503errorPage.png);
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.referesh {
+  cursor: pointer;
+  letter-spacing: var(--medium-space);
+}
+
+@media (max-width: 768px) {
+  .errorContainer {
+    width: 30rem;
+  }
+}

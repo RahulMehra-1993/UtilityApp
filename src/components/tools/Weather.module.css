@@ -1,0 +1,142 @@
+.sectionWeather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  height: 40rem;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--theme-color12);
+  color: var(--secondry-color);
+}
+.sectionWeather > button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: var(--medium);
+  font-weight: var(--medium);
+  background-image: url(https://cdn.pixabay.com/animation/2023/05/24/09/12/09-12-20-332_512.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 1rem;
+  border-style: none;
+  z-index: 1;
+}
+.weatherContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  opacity: 0;
+}
+
+.state__temp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--large);
+  margin-top: 2rem;
+  border-bottom: 4px ridge var(--theme-color12);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.state__temp > * > div {
+  text-align: start;
+  color: var(--theme-color3);
+}
+.icon {
+  width: 25%;
+  text-align: center;
+}
+
+.forecast {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: var(--medium);
+}
+.forecast > * {
+  text-align: center;
+}
+
+.heading {
+  color: var(--theme-color12);
+  font-weight: 500;
+}
+
+/* animation */
+.buttonAnimation {
+  animation: buttonAnimation 2s ease 1s 1 forwards;
+}
+.detailsAnimation {
+  animation: detailsAnimation 3s ease 2s 1 forwards;
+}
+
+@keyframes buttonAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+    display: none !important;
+  }
+}
+@keyframes detailsAnimation {
+  from {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionWeather {
+    padding: 0;
+    margin-bottom: 2rem;
+    height: 80%;
+    width: 100%;
+  }
+  .weatherContainer {
+    width: 30rem;
+  }
+  .state__temp {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+  .state__temp > * > h1 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .forecast {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .state__temp > * > div {
+    text-align: center;
+    color: #ecffb7;
+  }
+}

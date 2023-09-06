@@ -1,0 +1,208 @@
+.signupBox {
+  display: flex;
+  padding: 1rem;
+  min-width: 60rem;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.signupBoxHeading {
+  font-size: var(--large);
+  color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  animation: starter 1s ease forwards;
+  letter-spacing: 2px;
+  display: grid;
+  place-items: center;
+  background-color: var(--theme-color13);
+}
+.sidesignupWallpaper {
+  flex: 1;
+  width: 100%;
+  background-image: url("../../sources/signupIllustration.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.signupForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color3);
+  padding: 3rem;
+  animation: starterForm 1s ease forwards;
+}
+
+.inputs {
+  height: 2rem;
+  font-size: var(--medium);
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Rajdhani", sans-serif;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-style: groove;
+  background-color: transparent;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.inputs:focus {
+  border-bottom: 2px solid var(--theme-color13);
+  outline: none;
+}
+.signupForm > label {
+  height: 3rem;
+  font-size: var(--medium);
+  letter-spacing: 1px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.passwordBox {
+  display: flex;
+  width: 100%;
+}
+
+.openEye > *,
+.closeEye > * {
+  cursor: pointer;
+  width: 4rem;
+  height: 2rem;
+  margin-left: -4rem;
+  z-index: 1;
+}
+
+.signupForm > button {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--theme-color13);
+  color: var(--primary-color);
+  border: 0.1px solid var(--primary-color-trans);
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.signupForm > button:hover {
+  filter: drop-shadow(2px 2px 4px var(--theme-color13-trans));
+}
+
+.checkBox {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 3rem;
+}
+
+.agreement {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  height: 2rem;
+  width: 100%;
+}
+.agreement > span {
+  font-size: var(--small);
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+  word-spacing: var(--medium-space);
+}
+.agreement > span:hover {
+  text-decoration: none;
+}
+
+.signupBox > p {
+  font-size: var(--medium);
+  margin-top: 2rem;
+  margin-bottom: -1.5rem;
+  color: wheat;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+  letter-spacing: var(--medium-space);
+  font-size: var(--small) !important;
+  margin: 0 !important;
+  color: var(--secondry-color) !important;
+  background-color: var(--theme-color9);
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.verification {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: var(--small) !important;
+  margin: 0 !important;
+  background-color: var(--theme-color7);
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.skelton {
+  width: 100%;
+}
+
+.success {
+  background-color: transparent !important;
+}
+
+.success::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("https://i.pinimg.com/originals/40/6c/97/406c97079295f8d532e205087d4bb931.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #051b37;
+  z-index: 10;
+}
+
+@keyframes starter {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes starterForm {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media (max-width: 1201px) {
+  .signupBox {
+    min-width: 30rem;
+    aspect-ratio: 1/1.5;
+  }
+
+  .signupForm {
+    margin-right: 0;
+    padding: 2rem;
+  }
+  .sidesignupWallpaper {
+    display: none;
+  }
+}

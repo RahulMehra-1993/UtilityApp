@@ -1,0 +1,30 @@
+.logo {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--theme-color1);
+}
+.logo > img {
+  width: 15rem;
+  height: 100%;
+  float: right;
+  padding: var(--medium);
+}
+
+.logo p {
+  font-size: var(--medium);
+}
+.logo p strong {
+  letter-spacing: var(--medium-space);
+  margin-right: 1px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 30rem;
+  }
+  .logo p {
+    font-size: var(--small);
+  }
+}

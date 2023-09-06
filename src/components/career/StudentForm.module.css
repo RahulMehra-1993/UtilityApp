@@ -1,0 +1,106 @@
+.studentForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+.studentForm > * {
+  width: 70%;
+  height: 4rem;
+  color: var(--primary-color);
+}
+
+.studentForm > *:nth-child(odd) {
+  letter-spacing: var(--medium-space);
+  font-size: var(--medium);
+}
+
+.studentForm > *:nth-child(even) {
+  outline: none;
+  border-radius: 1rem;
+  padding: 0 0.5rem 0 1rem;
+  border: 1px solid var(--theme-color2);
+  background-color: var(--secondry-color);
+}
+
+.studentForm select > option {
+  font-size: var(--medium);
+  background-color: var(--primary-color);
+  color: var(--secondry-color);
+}
+.furtherOptions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.furtherOptions > * {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--secondry-color);
+  color: var(--primary-color);
+}
+.furtherOptions > *::placeholder {
+  text-align: center;
+}
+
+.submitButton {
+  grid-column: 2/3;
+  background-color: var(--primary-color);
+  color: var(--secondry-color);
+  border: none;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  font-size: 1.5rem !important;
+}
+.submitButton:hover {
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px var(--primary-color-trans));
+}
+.error {
+  background-color: var(--theme-color9) !important;
+  color: var(--secondry-color);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: var(--medium);
+  grid-column: 2/3;
+}
+
+@media (max-width: 768px) {
+  .studentForm {
+    grid-row-gap: 1rem !important ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 70%;
+  }
+
+  .submitButton {
+    grid-column: 1/1 !important;
+    place-items: center !important;
+    margin-top: 2rem;
+  }
+
+  .studentForm > * {
+    height: 3rem;
+    width: 90%;
+  }
+
+  .studentForm > *:nth-child(odd) {
+    display: grid;
+    place-items: end start;
+    font-size: var(--small);
+    font-weight: var(--medium-font);
+    letter-spacing: var(--small-space);
+  }
+
+  .error {
+    grid-column: 1/1;
+    font-size: var(--small);
+  }
+}

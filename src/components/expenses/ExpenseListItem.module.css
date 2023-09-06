@@ -1,0 +1,42 @@
+.expenseListSummary {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--medium);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color3);
+  color: var(--secondry-color);
+}
+
+.redTheme {
+  color: var(--theme-color9) !important;
+  font-weight: 700;
+}
+.greenTheme {
+  color: var(--theme-color10) !important;
+  font-weight: 700;
+}
+
+.deleteButton {
+  font-size: var(--small);
+  background-color: var(--secondry-color);
+  color: var(--theme-color9);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid var(--theme-color9);
+}
+.deleteButton:hover {
+  background-color: var(--theme-color9);
+  color: var(--secondry-color);
+}
+
+@media (max-width: 768px) {
+  .expenseListSummary {
+    font-size: var(--small);
+  }
+}

@@ -1,0 +1,45 @@
+.taskCreaterBox {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.darkTheme {
+  background-color: var(--primary-color3);
+  border: 1px solid var(--theme-color1);
+}
+.lightTheme {
+  background-color: var(--theme-color1);
+  border: 1px solid var(--primary-color3);
+}
+
+.taskCreaterBox:hover {
+  cursor: pointer;
+}
+.taskCreaterBox:hover > .addIcon {
+  opacity: 0.8;
+}
+
+.taskCreaterBox > p {
+  font-size: var(--medium);
+}
+
+.addIcon {
+  background-image: var(--background-highlighter-theme);
+  font-size: var(--large);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--theme-color1);
+}
+
+@media (max-width: 768px) {
+  .taskCreaterBox {
+    gap: 0.5rem;
+  }
+  .taskCreaterBox > p {
+    font-size: var(--small);
+  }
+}

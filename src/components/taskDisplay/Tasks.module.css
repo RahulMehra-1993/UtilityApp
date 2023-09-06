@@ -1,0 +1,43 @@
+.taskBox {
+  color: aliceblue;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 95%;
+  transform: rotateX(180deg);
+  width: 100%;
+  border-radius: 1rem;
+}
+.taskBox > * {
+  transform: rotateX(180deg);
+  height: 90%;
+}
+.title {
+  width: 4rem;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  display: grid;
+  place-items: center;
+  color: var(--theme-color14);
+}
+.taskList {
+  flex: 3;
+  width: 90dvw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.whiteTheme {
+  background-color: var(--secondry-color-trans);
+}
+
+.taskList::-webkit-scrollbar {
+  display: none;
+  height: 20px;
+}

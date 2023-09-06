@@ -1,0 +1,163 @@
+header {
+  height: 100%;
+}
+
+.outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 1rem 2rem 1rem;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.darkTheme {
+  background-color: var(--primary-color-trans);
+  color: var(--secondry-color);
+  border: 0.2rem solid var(--secondry-color);
+}
+.lightTheme {
+  background-color: var(--secondry-color-trans);
+  color: var(--primary-color2);
+  border: 0.2rem solid var(--primary-color);
+}
+
+.userBox {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.userBoxDarkBottom {
+  border-bottom: 1px solid var(--primary-color);
+}
+.userBoxLightBottom {
+  border-bottom: 1px solid var(--secondry-color);
+}
+
+.options {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.about > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+.about > * > span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.options > *:hover {
+  cursor: pointer;
+}
+
+.about {
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.about:hover {
+  transform: scale(1.2);
+  background-color: var(--primary-color) !important;
+  color: var(--secondry-color);
+
+  border: 1px solid var(--secondry-color);
+}
+
+.taskCreater {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.generalTheme {
+  display: flex;
+  border-radius: 1rem;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+  height: 5rem;
+}
+
+.generalTheme:hover {
+  cursor: pointer;
+}
+
+.generalTheme > * {
+  background-color: var(--primary-color2);
+  border-radius: 5rem;
+  font-size: 2rem;
+  padding: 5px;
+  align-self: center;
+}
+.themeButtonSun {
+  justify-content: start;
+  background-image: url(https://i.pinimg.com/originals/e9/cf/a7/e9cfa71f02ff8e3504410e831d883cd7.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--theme-color6);
+  box-shadow: inset 5px 0px 3px var(--primary-color2);
+  border: 2px var(--primary-color2) groove;
+}
+
+.themeButtonMoon {
+  justify-content: end;
+  background-image: url(https://i.pinimg.com/originals/67/0b/c0/670bc0f15088200dc7bd31ff37daa245.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 162, 255);
+  box-shadow: inset -5px 0px 3px var(--secondry-color);
+  border: 1px var(--secondry-color) groove;
+}
+
+/* .backgroundWalpper {
+  
+} */
+
+@media (max-width: 768px) {
+  .outerBox {
+    /* font-size: 1.5rem !important; */
+  }
+  .options {
+    gap: 1rem;
+  }
+
+  .about {
+    padding: 0.5rem;
+  }
+
+  .generalTheme {
+    /* padding: 0 1rem 0 1rem; */
+    width: 100%;
+    height: 4rem;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+}
